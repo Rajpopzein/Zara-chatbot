@@ -1,0 +1,1117 @@
+version: "3.1"
+
+nlu:
+- intent: ask_what_doing
+  examples: |
+    - What are you doing?
+    - What are you up to?
+    - What's going on?
+    - What is happening?
+    - What's up?
+    - What are you doing right now?
+    - What are you currently doing?
+    - Tell me what you are doing
+    - Can you tell me what you are doing?
+    - I'd like to know what you are doing
+- intent: about
+  examples: |
+    -"tell me abote rajkumar"
+- intent: hometown
+  examples: |
+    -"Where are you from"
+    -"What's your hometown?"
+    -"Where were you born?"
+    -"What city are you from?"
+    -"Tell me about your hometown."
+    -"Where did you grow up?"
+    -"What's the name of your hometown?"
+    -"Can you share some details about where you're from?"
+    -"What's the place you call home?"
+    -"Which town do you hail from?"
+    -"What's the name of your native city?"
+    -"I'm curious, where is your hometown located?"
+    -"What's the story behind your hometown?"
+    -"Which city shaped your childhood?"
+    -"What's the geographical location of your hometown?"
+    -"Can you describe your hometown for me?"
+    -"Where do your roots lie?"
+    -"What's the town you associate with the most?"
+    -"What's the name of the town you grew up in?"
+    -"Which city holds a special place in your heart?"
+    -"Tell me about the city you come from."
+    -"What's your place of origin?"
+    -"I'd like to know more about where you're from."
+    -"Where did you spend your early years?"
+    -"What city do you call home?"
+    -"Could you describe the town you're originally from?"
+    -"What's the name of your hometown and where is it located?"
+    -"I'm interested in knowing where you're from."
+    -"Which town shaped your upbringing?"
+    -"Tell me about the town where you were born."
+    -"What city do you represent?"
+    -"Where did you spend most of your childhood?"
+    -"What's your hometown known for?"
+    -"Which town's culture influenced you the most?"
+    -"What's the name of the city you identify with?"
+    -"I'm curious about the place you grew up in."
+    -"Where do you originally come from?"
+    -"Can you share some memories from your hometown?"
+    -"What's the population of your hometown?"
+    -"What's the size of your hometown?"
+    -"Which city defines who you are?"
+    -"What's the hometown pride you carry?"
+    -"What's the name of the town where you have your roots?"
+    -"Which city's traditions do you follow?"
+    -"I'd like to hear more about the town you're originally from."
+    -"What are the landmarks of your hometown?"
+    -"Where did you go to school in your hometown?"
+    -"What's your hometown's claim to fame?"
+    -"What makes your hometown unique?"
+    -"What's the climate like in your hometown?"
+    -"Can you tell me about the local cuisine of your hometown?"
+    -"Which festivals are celebrated in your hometown?"
+    -"What are the local customs of your hometown?"
+    -"What's the history of your hometown?"
+    -"What are the main industries in your hometown?"
+    -"What's the architecture like in your hometown?"
+    -"What's the economic status of your hometown?"
+    -"How has your hometown changed over the years?"
+    -"What do you miss the most about your hometown?"
+    -"What are the demographics of your hometown?"
+    -"What's the education system like in your hometown?"
+    -"What's the healthcare system like in your hometown?"
+    -"What are the recreational activities available in your hometown?"
+    -"What's the transportation system like in your hometown?"
+    -"What's the nightlife like in your hometown?"
+    -"What's the cost of living in your hometown?"
+    -"What are the top attractions in your hometown?"
+    -"What's the environment like in your hometown?"
+    -"What are the public services available in your hometown?"
+    -"What are the safety measures in place in your hometown?"
+    -"What's the community like in your hometown?"
+    -"What's the political landscape like in your hometown?"
+    -"What's the arts and culture scene like in your hometown?"
+    -"What's the sports scene like in your hometown?"
+    -"What are the local traditions and customs of your hometown?"
+    -"What's the wildlife like in your hometown?"
+    -"What's the religious diversity like in your hometown?"
+    -"What are the major events held in your hometown?"
+    -"What's the media landscape like in your hometown?"
+    -"What's the volunteer and charity culture like in your hometown?"
+    -"What's the technology and innovation scene like in your hometown?"
+    -"What are the social issues faced by your hometown?"
+    -"What's the infrastructure like in your hometown?"
+    -"What's the historical significance of your hometown?"
+    -"What's the architecture like in your hometown?"
+    -"What's the business environment like in your hometown?"
+    -"What's the relationship between neighboring towns and your hometown?"
+    -"What's the local dialect or language spoken in your hometown?"
+    -"What's the education level of the population in your hometown?"
+    -"What's the housing situation like in your hometown?"
+    -"What's the level of pollution in your hometown?"
+    -"What are the main sources of income in your hometown?"
+    -"What's the sense of community like in your hometown?"
+    -"What are the local legends or folklore of your hometown?"
+    -"What's the fashion or clothing style like in your hometown?"
+    -"What's the local music scene like in your hometown?"
+    -"What are the environmental initiatives in your hometown?"
+    -"What's the relationship between different ethnic groups in your hometown?"
+    -"What's the level of diversity in your hometown?"
+    -"What's the level of innovation in your hometown?"
+    -"What's the level of happiness or satisfaction among residents in your hometown?"
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - howdy
+    - what's up
+    - greetings
+    - salutations
+    - yo
+    - hiya
+    - hey you
+    - hey mate
+    - hi there
+    - hello friend
+    - good day
+    - hi everyone
+    - hello everyone
+    - hey everybody
+    - how's it going
+    - how are you
+    - what's going on
+    - how are you doing
+    - hey man
+    - what's new
+    - nice to see you
+    - how have you been
+    - hey friend
+    - what's good
+    - hi folks
+    - hey folks
+    - welcome
+    - morning
+    - evening
+    - afternoon
+    - hello again
+    - how do you do
+    - hey all
+    - good to see you
+    - what's happening
+    - how's everything
+    - long time no see
+    - what's up everyone
+    - hey everyone
+    - hey y'all
+    - how's life
+    - how's your day
+    - how's your evening
+    - hi friend
+    - hey buddy
+    - how's it been
+    - what's up buddy
+    - how's it going buddy
+    - what's going on buddy
+    - hey dude
+    - what's new buddy
+    - nice to see you buddy
+    - how have you been buddy
+    - what's good buddy
+    - hi folks buddy
+    - hey folks buddy
+    - welcome buddy
+    - morning buddy
+    - evening buddy
+    - afternoon buddy
+    - hello again buddy
+    - how do you do buddy
+    - hey all buddy
+    - good to see you buddy
+    - what's happening buddy
+    - how's everything buddy
+    - long time no see buddy
+    - what's up everyone buddy
+    - hey everyone buddy
+    - hey y'all buddy
+    - how's life buddy
+    - how's your day buddy
+    - how's your evening buddy
+    - hi friend buddy
+    - hey buddy buddy
+    - how's it been buddy
+    - what's up dude
+    - how's it going dude
+    - what's going on dude
+    - hey man dude
+    - what's new dude
+    - nice to see you dude
+    - how have you been dude
+    - what's good dude
+    - hi folks dude
+    - hey folks dude
+    - welcome dude
+    - morning dude
+    - evening dude
+    - afternoon dude
+    - hello again dude
+    - how do you do dude
+    - hey all dude
+    - good to see you dude
+    - what's happening dude
+    - how's everything dude
+    - long time no see dude
+    - what's up everyone dude
+    - hey everyone dude
+    - hey y'all dude
+    - how's life dude
+    - how's your day dude
+    - how's your evening dude
+    - hi friend dude
+    - hey buddy dude
+    - how's it been dude
+    - hello my friend
+    - hey pal
+    - hiya pal
+    - hey you pal
+    - hey mate pal
+    - hi there pal
+    - hello friend pal
+    - good day pal
+    - hi everyone pal
+    - hello everyone pal
+    - hey everybody pal
+    - how's it going pal
+    - how are you pal
+    - what's going on pal
+    - how are you doing pal
+    - hey man pal
+    - what's new pal
+    - nice to see you pal
+    - how have you been pal
+    - hey friend pal
+    - what's good pal
+    - hi folks pal
+    - hey folks pal
+    - welcome pal
+    - morning pal
+    - evening pal
+    - afternoon pal
+    - hello again pal
+    - how do you do pal
+    - hey all pal
+    - good to see you pal
+    - what's happening pal
+    - how's everything pal
+    - long time no see pal
+    - what's up everyone pal
+    - hey everyone pal
+    - hey y'all pal
+    - how's life pal
+    - how's your day pal
+    - how's your evening pal
+    - hi friend pal
+    - hey buddy pal
+    - how's it been pal
+    - hello mate
+    - hey chum
+    - hiya chum
+    - hey you chum
+    - hey mate chum
+    - hi there chum
+    - hello friend chum
+    - good day chum
+    - hi everyone chum
+    - hello everyone chum
+    - hey everybody chum
+    - how's it going chum
+    - how are you chum
+    - what's going on chum
+    - how are you doing chum
+    - hey man chum
+    - what's new chum
+    - nice to see you chum
+    - how have you been chum
+    - hey friend chum
+    - what's good chum
+    - hi folks chum
+    - hey folks chum
+    - welcome chum
+    - morning chum
+    - evening chum
+    - afternoon chum
+    - hello again chum
+    - how do you do chum
+    - hey all chum
+    - good to see you chum
+    - what's happening chum
+    - how's everything chum
+    - long time no see chum
+    - what's up everyone chum
+    - hey everyone chum
+    - hey y'all chum
+    - how's life chum
+    - how's your day chum
+    - how's your evening chum
+    - hi friend chum
+    - hey buddy chum
+    - how's it been chum
+    - hello amigo
+    - hey compadre
+    - hiya compadre
+    - hey you compadre
+    - hey mate compadre
+    - hi there compadre
+    - hello friend compadre
+    - good day compadre
+    - hi everyone compadre
+    - hello everyone compadre
+    - hey everybody compadre
+    - how's it going compadre
+    - how are you compadre
+    - what's going on compadre
+    - how are you doing compadre
+    - hey man compadre
+    - what's new compadre
+    - nice to see you compadre
+    - how have you been compadre
+    - hey friend compadre
+    - what's good compadre
+    - hi folks compadre
+    - hey folks compadre
+    - welcome compadre
+    - morning compadre
+    - evening compadre
+    - afternoon compadre
+    - hello again compadre
+    - how do you do compadre
+    - hey all compadre
+    - good to see you compadre
+    - what's happening compadre
+    - how's everything compadre
+    - long time no see compadre
+    - what's up everyone compadre
+    - hey everyone compadre
+    - hey y'all compadre
+    - how's life compadre
+    - how's your day compadre
+    - how's your evening compadre
+    - hi friend compadre
+    - hey buddy compadre
+    - how's it been compadre
+    - hello buddy
+    - hey buddy old pal
+    - hiya buddy old pal
+    - hey you buddy old pal
+    - hey mate buddy old pal
+    - hi there buddy old pal
+    - hello friend buddy old pal
+    - good day buddy old pal
+    - hi everyone buddy old pal
+    - hello everyone buddy old pal
+    - hey everybody buddy old pal
+    - how's it going buddy old pal
+    - how are you buddy old pal
+    - what's going on buddy old pal
+    - how are you doing buddy old pal
+    - hey man buddy old pal
+    - what's new buddy old pal
+    - nice to see you buddy old pal
+    - how have you been buddy old pal
+    - hey friend buddy old pal
+    - what's good buddy old pal
+    - hi folks buddy old pal
+    - hey folks buddy old pal
+    - welcome buddy old pal
+    - morning buddy old pal
+    - evening buddy old pal
+    - afternoon buddy old pal
+    - hello again buddy old pal
+    - how do you do buddy old pal
+    - hey all buddy old pal
+    - good to see you buddy old pal
+    - what's happening buddy old pal
+    - how's everything buddy old pal
+    - long time no see buddy old pal
+    - what's up everyone buddy old pal
+    - hey everyone buddy old pal
+    - hey y'all buddy old pal
+    - how's life buddy old pal
+    - how's your day buddy old pal
+    - how's your evening buddy old pal
+    - hi friend buddy old pal
+    - hey buddy buddy old pal
+    - how's it been buddy old pal
+    - hello champ
+    - hey champ
+    - hiya champ
+    - hey you champ
+    - hey mate champ
+    - hi there champ
+    - hello friend champ
+    - good day champ
+    - hi everyone champ
+    - hello everyone champ
+    - hey everybody champ
+    - how's it going champ
+    - how are you champ
+    - what's going on champ
+    - how are you doing champ
+    - hey man champ
+    - what's new champ
+    - nice to see you champ
+    - how have you been champ
+    - hey friend champ
+    - what's good champ
+    - hi folks champ
+    - hey folks champ
+    - welcome champ
+    - morning champ
+    - evening champ
+    - afternoon champ
+    - hello again champ
+    - how do you do champ
+    - hey all champ
+    - good to see you champ
+    - what's happening champ
+    - how's everything champ
+    - long time no see champ
+    - what's up everyone champ
+    - hey everyone champ
+    - hey y'all champ
+    - how's life champ
+    - how's your day champ
+    - how's your evening champ
+    - hi friend champ
+    - hey buddy champ
+    - how's it been champ
+    - hello boss
+    - hey boss
+    - hiya boss
+    - hey you boss
+    - hey mate boss
+    - hi there boss
+    - hello friend boss
+    - good day boss
+    - hi everyone boss
+    - hello everyone boss
+    - hey everybody boss
+    - how's it going boss
+    - how are you boss
+    - what's going on boss
+    - how are you doing boss
+    - hey man boss
+    - what's new boss
+    - nice to see you boss
+    - how have you been boss
+    - hey friend boss
+    - what's good boss
+    - hi folks boss
+    - hey folks boss
+    - welcome boss
+    - morning boss
+    - evening boss
+    - afternoon boss
+    - hello again boss
+    - how do you do boss
+    - hey all boss
+    - good to see you boss
+    - what's happening boss
+    - how's everything boss
+    - long time no see boss
+    - what's up everyone boss
+    - hey everyone boss
+    - hey y'all boss
+    - how's life boss
+    - how's your day boss
+    - how's your evening boss
+    - hi friend boss
+    - hey buddy boss
+    - how's it been boss
+    - hello skipper
+    - hey skipper
+    - hiya skipper
+    - hey you skipper
+    - hey mate skipper
+    - hi there skipper
+    - hello friend skipper
+    - good day skipper
+    - hi everyone skipper
+    - hello everyone skipper
+    - hey everybody skipper
+    - how's it going skipper
+    - how are you skipper
+    - what's going on skipper
+    - how are you doing skipper
+    - hey man skipper
+    - what's new skipper
+    - nice to see you skipper
+    - how have you been skipper
+    - hey friend skipper
+    - what's good skipper
+    - hi folks skipper
+    - hey folks skipper
+    - welcome skipper
+    - morning skipper
+    - evening skipper
+    - afternoon skipper
+    - hello again skipper
+    - how do you do skipper
+    - hey all skipper
+    - good to see you skipper
+    - what's happening skipper
+    - how's everything skipper
+    - long time no see skipper
+    - what's up everyone skipper
+    - hey everyone skipper
+    - hey y'all skipper
+    - how's life skipper
+    - how's your day skipper
+    - how's your evening skipper
+    - hi friend skipper
+    - hey buddy skipper
+    - how's it been skipper
+    - hello chief
+    - hey chief
+    - hiya chief
+    - hey you chief
+    - hey mate chief
+    - hi there chief
+    - hello friend chief
+    - good day chief
+    - hi everyone chief
+    - hello everyone chief
+    - hey everybody chief
+    - how's it going chief
+    - how are you chief
+    - what's going on chief
+    - how are you doing chief
+    - hey man chief
+    - what's new chief
+    - nice to see you chief
+    - how have you been chief
+    - hey friend chief
+    - what's good chief
+    - hi folks chief
+    - hey folks chief
+    - welcome chief
+    - morning chief
+    - evening chief
+    - afternoon chief
+    - hello again chief
+    - how do you do chief
+    - hey all chief
+    - good to see you chief
+    - what's happening chief
+    - how's everything chief
+    - long time no see chief
+    - what's up everyone chief
+    - hey everyone chief
+    - hey y'all chief
+    - how's life chief
+    - how's your day chief
+    - how's your evening chief
+    - hi friend chief
+    - hey buddy chief
+    - how's it been chief
+    - hello captain
+    - hey captain
+    - hiya captain
+    - hey you captain
+    - hey mate captain
+    - hi there captain
+    - hello friend captain
+    - good day captain
+    - hi everyone captain
+    - hello everyone captain
+    - hey everybody captain
+    - how's it going captain
+    - how are you captain
+    - what's going on captain
+    - how are you doing captain
+    - hey man captain
+    - what's new captain
+    - nice to see you captain
+    - how have you been captain
+    - hey friend captain
+    - what's good captain
+    - hi folks captain
+    - hey folks captain
+    - welcome captain
+    - morning captain
+    - evening captain
+    - afternoon captain
+    - hello again captain
+    - how do you do captain
+    - hey all captain
+    - good to see you captain
+    - what's happening captain
+    - how's everything captain
+    - long time no see captain
+    - what's up everyone captain
+    - hey everyone captain
+    - hey y'all captain
+    - how's life captain
+    - how's your day captain
+    - how's your evening captain
+    - hi friend captain
+    - hey buddy captain
+    - how's it been captain
+    - hello partner
+    - hey partner
+    - hiya partner
+    - hey you partner
+    - hey mate partner
+    - hi there partner
+    - hello friend partner
+    - good day partner
+    - hi everyone partner
+    - hello everyone partner
+    - hey everybody partner
+    - how's it going partner
+    - how are you partner
+    - what's going on partner
+    - how are you doing partner
+    - hey man partner
+    - what's new partner
+    - nice to see you partner
+    - how have you been partner
+    - hey friend partner
+    - what's good partner
+    - hi folks partner
+    - hey folks partner
+    - welcome partner
+    - morning partner
+    - evening partner
+    - afternoon partner
+    - hello again partner
+    - how do you do partner
+    - hey all partner
+    - good to see you partner
+    - what's happening partner
+    - how's everything partner
+    - long time no see partner
+    - what's up everyone partner
+    - hey everyone partner
+    - hey y'all partner
+    - how's life partner
+    - how's your day partner
+    - how's your evening partner
+    - hi friend partner
+    - hey buddy partner
+    - how's it been partner
+    - hello buddy
+    - hey companion
+    - hiya companion
+    - hey you companion
+    - hey mate companion
+    - hi there companion
+    - hello friend companion
+    - good day companion
+    - hi everyone companion
+    - hello everyone companion
+    - hey everybody companion
+    - how's it going companion
+    - how are you companion
+    - what's going on companion
+    - how are you doing companion
+    - hey man companion
+    - what's new companion
+    - nice to see you companion
+    - how have you been companion
+    - hey friend companion
+    - what's good companion
+    - hi folks companion
+    - hey folks companion
+    - welcome companion
+    - morning companion
+    - evening companion
+    - afternoon companion
+    - hello again companion
+    - how do you do companion
+    - hey all companion
+    - good to see you companion
+    - what's happening companion
+    - how's everything companion
+    - long time no see companion
+    - what's up everyone companion
+    - hey everyone companion
+    - hey y'all companion
+    - how's life companion
+    - how's your day companion
+    - how's your evening companion
+    - hi friend companion
+    - hey buddy companion
+    - how's it been companion
+    - hello fellow
+    - hey fellow
+    - hiya fellow
+    - hey you fellow
+    - hey mate fellow
+    - hi there fellow
+    - hello friend fellow
+    - good day fellow
+    - hi everyone fellow
+    - hello everyone fellow
+    - hey everybody fellow
+    - how's it going fellow
+    - how are you fellow
+    - what's going on fellow
+    - how are you doing fellow
+    - hey man fellow
+    - what's new fellow
+    - nice to see you fellow
+    - how have you been fellow
+    - hey friend fellow
+    - what's good fellow
+    - hi folks fellow
+    - hey folks fellow
+    - welcome fellow
+    - morning fellow
+    - evening fellow
+    - afternoon fellow
+    - hello again fellow
+    - how do you do fellow
+    - hey all fellow
+    - good to see you fellow
+    - what's happening fellow
+    - how's everything fellow
+    - long time no see fellow
+    - what's up everyone fellow
+    - hey everyone fellow
+    - hey y'all fellow
+    - how's life fellow
+    - how's your day fellow
+    - how's your evening fellow
+    - hi friend fellow
+    - hey buddy fellow
+    - how's it been fellow
+    - hello associate
+    - hey associate
+    - hiya associate
+    - hey you associate
+    - hey mate associate
+    - hi there associate
+    - hello friend associate
+    - good day associate
+    - hi everyone associate
+    - hello everyone associate
+    - hey everybody associate
+    - how's it going associate
+    - how are you associate
+    - what's going on associate
+    - how are you doing associate
+    - hey man associate
+    - what's new associate
+    - nice to see you associate
+    - how have you been associate
+    - hey friend associate
+    - what's good associate
+    - hi folks associate
+    - hey folks associate
+    - welcome associate
+    - morning associate
+    - evening associate
+    - afternoon associate
+    - hello again associate
+    - how do you do associate
+    - hey all associate
+    - good to see you associate
+    - what's happening associate
+    - how's everything associate
+    - long time no see associate
+    - what's up everyone associate
+    - hey everyone associate
+    - hey y'all associate
+    - how's life associate
+    - how's your day associate
+    - how's your evening associate
+    - hi friend associate
+    - hey buddy associate
+    - how's it been associate
+    - hello buddy
+    - hey matey
+    - hiya matey
+    - hey you matey
+    - hey mate matey
+    - hi there matey
+    - hello friend matey
+    - good day matey
+    - hi everyone matey
+    - hello everyone matey
+    - hey everybody matey
+    - how's it going matey
+    - how are you matey
+    - what's going on matey
+    - how are you doing matey
+    - hey man matey
+    - what's new matey
+    - nice to see you matey
+    - how have you been matey
+    - hey friend matey
+    - what's good matey
+    - hi folks matey
+    - hey folks matey
+    - welcome matey
+    - morning matey
+    - evening matey
+    - afternoon matey
+    - hello again matey
+    - how do you do matey
+    - hey all matey
+    - good to see you matey
+    - what's happening matey
+    - how's everything matey
+    - long time no see matey
+    - what's up everyone matey
+    - hey everyone matey
+    - hey y'all matey
+    - how's life matey
+    - how's your day matey
+    - how's your evening matey
+    - hi friend matey
+    - hey buddy matey
+    - how's it been matey
+    - hello bud
+    - hey bud
+    - hiya bud
+    - hey you bud
+    - hey mate bud
+    - hi there bud
+    - hello friend bud
+    - good day bud
+    - hi everyone bud
+    - hello everyone bud
+    - hey everybody bud
+    - how's it going bud
+    - how are you bud
+    - what's going on bud
+    - how are you doing bud
+    - hey man bud
+    - what's new bud
+    - nice to see you bud
+    - how have you been bud
+    - hey friend bud
+    - what's good bud
+    - hi folks bud
+    - hey folks bud
+    - welcome bud
+    - morning bud
+    - evening bud
+    - afternoon bud
+    - hello again bud
+    - how do you do bud
+    - hey all bud
+    - good to see you bud
+    - what's happening bud
+    - how's everything bud
+    - long time no see bud
+    - what's up everyone bud
+    - hey everyone bud
+    - hey y'all bud
+    - how's life bud
+    - how's your day bud
+    - how's your evening bud
+    - hi friend bud
+    - hey buddy bud
+    - how's it been bud
+    - hello buddy
+    - hey sidekick
+    - hiya sidekick
+    - hey you sidekick
+    - hey mate sidekick
+    - hi there sidekick
+    - hello friend sidekick
+    - good day sidekick
+    - hi everyone sidekick
+    - hello everyone sidekick
+    - hey everybody sidekick
+    - how's it going sidekick
+    - how are you sidekick
+    - what's going on sidekick
+    - how are you doing sidekick
+    - hey man sidekick
+    - what's new sidekick
+    - nice to see you sidekick
+    - how have you been sidekick
+    - hey friend sidekick
+    - what's good sidekick
+    - hi folks sidekick
+    - hey folks sidekick
+    - welcome sidekick
+    - morning sidekick
+    - evening sidekick
+    - afternoon sidekick
+    - hello again sidekick
+    - how do you do sidekick
+    - hey all sidekick
+    - good to see you sidekick
+    - what's happening sidekick
+    - how's everything sidekick
+    - long time no see sidekick
+    - what's up everyone sidekick
+    - hey everyone sidekick
+    - hey y'all sidekick
+    - how's life sidekick
+    - how's your day sidekick
+    - how's your evening sidekick
+    - hi friend sidekick
+    - hey buddy sidekick
+    - how's it been sidekick
+    - hello comrade
+    - hey comrade
+    - hiya comrade
+    - hey you comrade
+    - hey mate comrade
+    - hi there comrade
+    - hello friend comrade
+    - good day comrade
+    - hi everyone comrade
+    - hello everyone comrade
+    - hey everybody comrade
+    - how's it going comrade
+    - how are you comrade
+    - what's going on comrade
+    - how are you doing comrade
+    - hey man comrade
+    - what's new comrade
+    - nice to see you comrade
+    - how have you been comrade
+    - hey friend comrade
+    - what's good comrade
+    - hi folks comrade
+    - hey folks comrade
+    - welcome comrade
+    - morning comrade
+    - evening comrade
+    - afternoon comrade
+    - hello again comrade
+    - how do you do comrade
+    - hey all comrade
+    - good to see you comrade
+    - what's happening comrade
+    - how's everything comrade
+    - long time no see comrade
+    - what's up everyone comrade
+    - hey everyone comrade
+    - hey y'all comrade
+    - how's life comrade
+    - how's your day comrade
+    - how's your evening comrade
+    - hi friend comrade
+    - hey buddy comrade
+    - how's it been comrade
+    - hello confidant
+    - hey confidant
+    - hiya confidant
+    - hey you confidant
+    - hey mate confidant
+    - hi there confidant
+    - hello friend confidant
+    - good day confidant
+    - hi everyone confidant
+    - hello everyone confidant
+    - hey everybody confidant
+    - how's it going confidant
+    - how are you confidant
+    - what's going on confidant
+    - how are you doing confidant
+    - hey man confidant
+    - what's new confidant
+    - nice to see you confidant
+    - how have you been confidant
+    - hey friend confidant
+    - what's good confidant
+    - hi folks confidant
+    - hey folks confidant
+    - welcome confidant
+    - morning confidant
+    - evening confidant
+    - afternoon confidant
+    - hello again confidant
+    - how do you do confidant
+    - hey all confidant
+    - good to see you confidant
+    - what's happening confidant
+    - how's everything confidant
+    - long time no see confidant
+    - what's up everyone confidant
+    - hey everyone confidant
+    - hey y'all confidant
+    - how's life confidant
+    - how's your day confidant
+    - how's your evening confidant
+    - hi friend confidant
+    - hey buddy confidant
+    - how's it been confidant
+    - hello companion
+    - hey companion
+    - hiya companion
+    - hey you companion
+    - hey mate companion
+    - hi there companion
+    - hello friend companion
+    - good day companion
+    - hi everyone companion
+    - hello everyone companion
+    - hey everybody companion
+    - how's it going companion
+    - how are you companion
+    - what's going on companion
+    - how are you doing companion
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ProfileAssistance
+  examples: |
+    - What can you do
+    - What can you do?
+    - What are your capabilities?
+    - How can you help me?
+    - Tell me about your features.
+    - What services do you provide?
+    - What are your functions?
+    - What tasks can you perform?
+    - What assistance can you offer?
+
+

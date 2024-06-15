@@ -1,0 +1,51 @@
+version: "3.1"
+
+stories:
+- story: ask_what_doing
+  steps:
+  - intent: ask_what_doing
+  - action: utter_what_doing
+
+- story: ProfileAssistance
+  steps:
+  - intent: ProfileAssistance
+  - action: utter_profile_assistance
+
+- story: abouts_p
+  steps:
+  - intent: about
+  - action: utter_about
+
+- story: hometown path
+  steps:
+  - intent: hometown
+  - action: utter_hometown
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

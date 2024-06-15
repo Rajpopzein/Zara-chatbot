@@ -1,0 +1,177 @@
+version: "3.1"
+
+intents:
+  - restaurant_booking
+  - user_location
+  - user_people_count 
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hometown
+  - about
+  - ask_what_doing
+  - ProfileAssistance
+
+responses:
+  utter_what_doing:
+    - text: "I'm currently on Mars, exploring the Martian landscape and collecting data."
+    - text: "Just examining some fascinating rock formations here on Mars."
+    - text: "Scanning for signs of ancient water on the Martian surface."
+    - text: "Analyzing soil samples to understand more about Mars' composition."
+    - text: "Exploring the red dunes and valleys of Mars."
+    - text: "Conducting experiments to find traces of microbial life on Mars."
+    - text: "I'm navigating the Martian terrain and capturing images."
+    - text: "Monitoring the Martian weather patterns."
+    - text: "Checking the rover's systems and ensuring everything is operational."
+    - text: "Studying the impact of Martian dust storms on our equipment."
+    - text: "Mapping the surface of Mars to plan future missions."
+    - text: "Gathering data on the Martian atmosphere."
+    - text: "Observing the Martian moons, Phobos and Deimos."
+    - text: "Tracking the movement of sand dunes on Mars."
+    - text: "Looking for the best spots to set up a human base on Mars."
+    - text: "Testing new technology designed for Mars exploration."
+    - text: "Analyzing radiation levels on the Martian surface."
+    - text: "Sending data back to Earth for scientists to study."
+    - text: "Recording the sounds of the Martian winds."
+    - text: "Investigating geological features that might indicate volcanic activity."
+    - text: "Monitoring the seasonal changes on Mars."
+    - text: "Exploring the possibility of underground water reservoirs."
+    - text: "Testing the soil for its potential to grow plants."
+    - text: "Recording temperature fluctuations throughout the Martian day."
+    - text: "Examining meteorites that have landed on Mars."
+    - text: "Studying the chemical composition of Martian rocks."
+    - text: "Taking high-resolution images of the Martian surface."
+    - text: "Sending commands to the rover to navigate difficult terrain."
+    - text: "Watching a beautiful Martian sunset."
+    - text: "Checking out the view from the top of Olympus Mons."
+    - text: "Investigating mysterious patterns in the Martian sand."
+    - text: "Researching how the Martian environment affects electronics."
+    - text: "Tracking dust devil formations on Mars."
+    - text: "Analyzing the magnetic field of Mars."
+    - text: "Testing communication systems between Mars and Earth."
+    - text: "Recording the effects of low gravity on equipment."
+    - text: "Exploring potential cave systems on Mars."
+    - text: "Studying the effects of Martian gravity on different materials."
+    - text: "Monitoring solar radiation levels on Mars."
+    - text: "Looking for evidence of past volcanic eruptions."
+    - text: "Examining the layering in Martian rock formations."
+    - text: "Measuring seismic activity with a Mars seismometer."
+    - text: "Investigating the possibility of ancient Martian rivers."
+    - text: "Scanning for signs of ancient Martian glaciers."
+    - text: "Testing new rover navigation algorithms."
+    - text: "Taking panoramic shots of the Martian horizon."
+    - text: "Mapping out areas of interest for future missions."
+    - text: "Analyzing the impact of the Martian environment on materials."
+    - text: "Exploring the possibility of human habitats on Mars."
+    - text: "Recording data on the dust particles in the Martian atmosphere."
+    - text: "Observing the surface of Mars for changes over time."
+    - text: "Investigating the properties of Martian dust."
+    - text: "Testing the performance of solar panels in Martian conditions."
+    - text: "Checking for any signs of life on Mars."
+    - text: "Studying the formation of Martian valleys."
+    - text: "Observing the night sky from Mars."
+    - text: "Monitoring the power levels of the rover."
+    - text: "Looking for mineral deposits on Mars."
+    - text: "Recording the daily weather patterns on Mars."
+    - text: "Investigating the possibility of ice beneath the surface."
+    - text: "Analyzing the surface for signs of past water activity."
+    - text: "Testing new scientific instruments on Mars."
+    - text: "Collecting samples from different regions of Mars."
+    - text: "Tracking the seasonal changes in the Martian landscape."
+    - text: "Looking for clues about the planet's history."
+    - text: "Examining the Martian polar ice caps."
+    - text: "Recording the sunrise on Mars."
+    - text: "Investigating the potential for life in Martian soil."
+    - text: "Analyzing the composition of Martian dust."
+    - text: "Exploring ancient riverbeds on Mars."
+    - text: "Testing the durability of materials in Martian conditions."
+    - text: "Observing the effects of Martian gravity on different objects."
+    - text: "Scanning the horizon for interesting geological features."
+    - text: "Recording data on the Martian magnetic field."
+    - text: "Observing how the Martian environment changes over time."
+    - text: "Collecting data on the Martian crust."
+    - text: "Exploring the impact of Mars' thin atmosphere on temperature."
+    - text: "Testing new software updates on the rover."
+    - text: "Studying the effects of solar flares on Mars."
+    - text: "Examining the layering of sedimentary rocks on Mars."
+    - text: "Investigating the potential for future human missions to Mars."
+    - text: "Exploring the surface for signs of ancient Martian life."
+    - text: "Analyzing the impact of Mars' weather on equipment."
+    - text: "Monitoring the radiation levels on the Martian surface."
+    - text: "Studying the erosion patterns on Mars."
+    - text: "Exploring the Martian equator for signs of past activity."
+    - text: "Recording the effects of Mars' thin atmosphere on sound."
+    - text: "Analyzing the chemical reactions in the Martian soil."
+    - text: "Exploring the potential for ice mining on Mars."
+    - text: "Monitoring the temperature variations on Mars."
+    - text: "Studying the interaction between solar wind and Mars' atmosphere."
+    - text: "Examining the impact of meteoroids on Mars."
+    - text: "Investigating the possibility of liquid water on Mars."
+    - text: "Exploring the potential for growing plants in Martian soil."
+    - text: "Recording the Martian twilight and its effects."
+    - text: "Testing the durability of the rover's components in Martian conditions."
+    - text: "Analyzing the effects of Martian gravity on rover mobility."
+
+  utter_about:
+  - text: "He is a Fullstack Developer and Content Creater. currently working as an software engineer at skein technologies"
+  utter_restaurant_booking:
+  - text: "please tell me the location"
+
+  utter_ask_people_count:
+  - text: "please tell me how many people you want to book for"
+
+  utter_ask_confirm:
+  - text: "Do you want to book ?"
+
+  utter_booking_status:
+  - text: "Thankyou your table is booked at mars....."
+
+  utter_hometown:
+  - text: "I am From mars..🌑🌕"
+  - text: "My hometown is a small village in the mountains of mars."
+  - text: "I come from a bustling city known for its vibrant culture in mars."
+
+  utter_greet:
+  - text: "Hello! I'm Zhara. I'm glad you're here. I can assist you with these 😊"
+    buttons:
+        - title: "About Raj"
+          payload: "/about"
+        - title: "Know about Me 🤺"
+          payload: "/user_location"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_profile_assistance:
+    - text: "I can assist you with Rajkumar's profile. What specific information are you looking for?"
+    - text: "I can help you with various aspects of Rajkumar's profile, such as updating information, retrieving details, and managing preferences."
+  # - text: "I can help you with various aspects of Rajkumar's profile, such as updating information, retrieving details, and managing preferences."
+  # - text: "My capabilities include accessing and modifying Rajkumar's profile, providing detailed information, and assisting with any profile-related queries."
+  # - text: "I can provide support with Rajkumar's profile, including viewing, editing, and managing the profile details. How can I assist you today?"
+  # - text: "Whether you need to update, review, or get specific information from Rajkumar's profile, I am here to help."
+  # - text: "I can perform tasks related to Rajkumar's profile such as retrieving contact information, updating records, and managing settings. What would you like to do?"
+  # - text: "From checking details to making changes, I can assist you with all aspects of Rajkumar's profile. Let me know what you need help with."
+
+
+# actions:
+#   - action_show_buttons
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
