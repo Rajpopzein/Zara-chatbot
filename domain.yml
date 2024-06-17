@@ -15,6 +15,8 @@ intents:
   - about
   - ask_what_doing
   - ProfileAssistance
+  - know_more
+  - experiance
 
 responses:
   utter_what_doing:
@@ -118,6 +120,13 @@ responses:
 
   utter_about:
   - text: "He is a Fullstack Developer and Content Creater. currently working as an software engineer at skein technologies"
+    buttons:
+        - title: "Education"
+          payload: "/education "
+        - title: "Work experiance"
+          payload: "/Work_experiance "
+
+
   utter_restaurant_booking:
   - text: "please tell me the location"
 
@@ -136,12 +145,13 @@ responses:
   - text: "I come from a bustling city known for its vibrant culture in mars."
 
   utter_greet:
-  - text: "Hello! I'm Zhara. I'm glad you're here. I can assist you with these 😊"
+  - text: "Hello! I'm Zara. I'm glad you're here. I can assist you with these 😊"
     buttons:
-        - title: "About Raj"
+        - title: "About Raj 💻"
           payload: "/about"
         - title: "Know about Me 🤺"
-          payload: "/user_location"
+          payload: "/ProfileAssistance"
+
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -160,17 +170,23 @@ responses:
 
   utter_profile_assistance:
     - text: "I can assist you with Rajkumar's profile. What specific information are you looking for?"
-    - text: "I can help you with various aspects of Rajkumar's profile, such as updating information, retrieving details, and managing preferences."
-  # - text: "I can help you with various aspects of Rajkumar's profile, such as updating information, retrieving details, and managing preferences."
-  # - text: "My capabilities include accessing and modifying Rajkumar's profile, providing detailed information, and assisting with any profile-related queries."
-  # - text: "I can provide support with Rajkumar's profile, including viewing, editing, and managing the profile details. How can I assist you today?"
-  # - text: "Whether you need to update, review, or get specific information from Rajkumar's profile, I am here to help."
-  # - text: "I can perform tasks related to Rajkumar's profile such as retrieving contact information, updating records, and managing settings. What would you like to do?"
-  # - text: "From checking details to making changes, I can assist you with all aspects of Rajkumar's profile. Let me know what you need help with."
+    - text: "My capabilities providing detailed information, and assisting with any profile-related queries about  Rajkumar's profile"
+    - text: "I can provide support with Rajkumar's profile, How can I assist you today?"
+    - text: "Whether you need to get  information from Rajkumar's profile, I am here to help."
+    - text: "I can perform tasks related to Rajkumar's profile such as retrieving contact information and download his resume What would you like to do?"
+    - text: "I can assist you with all aspects of Rajkumar's profile. Let me know what you need help with."
+  
+  utter_know_more_abt_raj:
+    - text: "He completed his Bachelor of Information Technology degree at Mahendra Engineering College and also obtained a diploma in Computer Science Engineering from N.P.A Polytechnic College in Kotagiri."
+  
+  utter_know_more_experiance:
+    - text: "He is currently working at Skein Technologies Pvt Ltd with 2 years of experience as a software engineer. His objective is to create frontend applications in React, develop APIs using Python or Node.js, and he is familiar with AWS and Azure for cloud services."
+    # buttons:
+    #     - title: Download resume
+    #       payload: "https://drive.usercontent.google.com/download?id=1RmURQ2OdS28nt8utWMZ9WNMd_TVB7OhU&export=download&authuser=0&confirm=t&uuid=288800af-ebc6-439f-a5a0-0aedd8e0ee58&at=APZUnTUJ0zVstFMGUqsHcL8I12RO:1718627031956"
 
-
-# actions:
-#   - action_show_buttons
+actions:
+  - action_provide_download_link
 
 session_config:
   session_expiration_time: 60

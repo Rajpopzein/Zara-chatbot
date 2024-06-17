@@ -13,9 +13,22 @@ nlu:
     - Tell me what you are doing
     - Can you tell me what you are doing?
     - I'd like to know what you are doing
+
 - intent: about
   examples: |
     -"tell me abote rajkumar"
+
+- intent: experiance
+  examples: |
+    -"tell me about rajkumar experiance"
+
+- intent: resume_download
+  examples: |
+      - I want to download the resume
+      - Can you provide the resume download link?
+      - Download resume
+      - Give me the resume
+
 - intent: hometown
   examples: |
     -"Where are you from"
@@ -1041,7 +1054,9 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
+- intent: know_more
+  examples: |
+    -"eductaion" 
 - intent: affirm
   examples: |
     - yes
