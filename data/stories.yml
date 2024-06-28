@@ -19,8 +19,8 @@ stories:
   - action: utter_know_more_abt_raj
   - intent: experiance
   - action: utter_know_more_experiance
-  - intent: resume_download
-  - action: action_provide_download_link
+  # - intent: resume_download
+  # - action: action_provide_download_link
   
 
 
