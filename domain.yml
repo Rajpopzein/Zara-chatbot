@@ -185,8 +185,8 @@ responses:
     #     - title: Download resume
     #       payload: "https://drive.usercontent.google.com/download?id=1RmURQ2OdS28nt8utWMZ9WNMd_TVB7OhU&export=download&authuser=0&confirm=t&uuid=288800af-ebc6-439f-a5a0-0aedd8e0ee58&at=APZUnTUJ0zVstFMGUqsHcL8I12RO:1718627031956"
 
-actions:
-  - action_provide_download_link
+# actions:
+#   - action_provide_download_link
 
 session_config:
   session_expiration_time: 60
