@@ -19,7 +19,6 @@ jobs:
         - name: Build and push Docker images
           uses: docker/build-push-action@v6.2.0
           with:
-            image: rajkumar047/zara_chatbot
             push: true
             tags: rajkumar047/zara_chatbot:latest
             
