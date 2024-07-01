@@ -20,7 +20,7 @@ jobs:
           uses: docker/build-push-action@v6.2.0
           with:
             push: true
-            tags: rajkumar047/zara_chatbot:latest
+            tags: rajkumar074/zara_chatbot:latest
             
           
             
