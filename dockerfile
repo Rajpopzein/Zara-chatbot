@@ -20,11 +20,11 @@ RUN chmod 644 /app/config.yml
 # Train the model (optional, can be removed for pre-trained model)
 RUN rasa train
 
-# Expose port for Rasa server
+# Use Render's dynamic PORT environment variable
+ENV PORT=4000
+
+# Expose the default port (informational only; Render doesn't use this)
 EXPOSE 4000
 
 # Command to run the Rasa server
-CMD ["rasa", "run", "--enable-api", "--port", "4000"]
-
-
-
+CMD ["rasa", "run", "--enable-api", "--port", "$PORT", "--host", "0.0.0.0"]
