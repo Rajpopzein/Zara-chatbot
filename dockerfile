@@ -26,5 +26,8 @@ ENV PORT=4000
 # Expose the default port (informational only; Render doesn't use this)
 EXPOSE 4000
 
+# Set the ENTRYPOINT to `rasa`
+ENTRYPOINT ["rasa"]
+
 # Command to run the Rasa server
-CMD ["rasa", "run", "--enable-api", "--port", "$PORT", "--host", "0.0.0.0"]
+CMD ["run", "--enable-api", "--port", "$PORT", "--host", "0.0.0.0"]
