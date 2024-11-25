@@ -7,6 +7,8 @@ COPY . /app
 # Set working directory
 WORKDIR /app
 
+COPY config.yml /app/config.yml
+
 # Train the model (optional, can be removed for pre-trained model)
 RUN rasa train
 
