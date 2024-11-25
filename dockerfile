@@ -17,7 +17,7 @@ RUN chmod 644 /app/config.yml
 RUN rasa train
 
 # Expose port for Rasa server
-EXPOSE 5005
+EXPOSE 4000
 
 # Command to run the Rasa server
-CMD ["run", "--enable-api", "--cors", "*", "--port", "5005"]
+CMD ["run", "--enable-api", "--cors", "*", "--port", "4000"]
