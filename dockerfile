@@ -1,11 +1,17 @@
-FROM python:3.7-slim
+# Base image for Rasa
+FROM rasa/rasa:latest
 
+# Copy project files into the container
+COPY . /app
+
+# Set working directory
 WORKDIR /app
 
-COPY . .
-
-RUN pip install -r requirements.txt
-
+# Train the model (optional, can be removed for pre-trained model)
 RUN rasa train
 
-CMD [ "rasa", "run", "--enable-api" "--cors" "*" ]
+# Expose port for Rasa server
+EXPOSE 5005
+
+# Command to run the Rasa server
+CMD ["run", "--enable-api", "--cors", "*", "--port", "5005"]
