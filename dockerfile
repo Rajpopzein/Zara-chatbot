@@ -11,7 +11,7 @@ COPY . /app
 # Set working directory
 WORKDIR /app
 
-USER ROOT
+USER root
 
 COPY config.yml /app/config.yml
 
