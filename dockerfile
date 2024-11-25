@@ -24,6 +24,5 @@ RUN rasa train
 EXPOSE 4000
 
 # Command to run the Rasa server
-ENTRYPOINT ["rasa", "run", "--host", "0.0.0.0", "--enable-api", "--port", "4000"]
-
+CMD ["rasa", "run", "--enable-api", "--port", "4000"]
 
