@@ -13,8 +13,6 @@ COPY config.yml /app/config.yml
 
 RUN chmod 644 /app/config.yml
 
-USER <non-root-user>
-
 # Train the model (optional, can be removed for pre-trained model)
 RUN rasa train
 
