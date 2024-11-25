@@ -11,7 +11,11 @@ COPY . /app
 # Set working directory
 WORKDIR /app
 
+USER ROOT
+
 COPY config.yml /app/config.yml
+
+RUN chmod 644 /app/config.yml
 
 # Train the model (optional, can be removed for pre-trained model)
 RUN rasa train
